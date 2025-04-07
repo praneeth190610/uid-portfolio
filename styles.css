@@ -1,0 +1,276 @@
+
+      /* Base Styling */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: black;
+        color: #fff;
+        line-height: 1.6;
+    }
+    
+    /* Navigation */
+    nav {
+        background-color: #111;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+    }
+    
+    nav a:hover {
+        color: gold;
+    }
+    
+    /* Sections */
+    section {
+        padding: 5rem 2rem;
+        min-height: 100vh;
+        max-width: 1200px;
+        margin:  auto;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color:  #bee130;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        margin: 1.5rem 0;
+        color: #ccc;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+        color: #aaa;
+    }
+    
+    p, li {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    /* Home Section - New Layout */
+    #home {
+        display: flex;
+        
+        
+        align-items: center;
+        padding-top: 8rem;
+    }
+    
+    .home-content {
+
+        padding-right: 3rem;
+        max-width: 60%;
+    }
+    
+
+    
+    #home img {
+        border-radius: 50%;
+        width: 420px;
+        height: 420px;
+        border: 10px solid rgb(226, 218, 218);
+        
+    }
+    
+
+    
+    #home h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #fff;
+        text-align: left;
+    }
+    
+    #home h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+    
+    #home p {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+    
+    /* About Section */
+    .info-label {
+        font-weight: bold;
+        display: inline-block;
+        width: 120px;
+        color:  #bee130;
+    }
+    
+    /* Education Section */
+    .education-item {
+        margin-bottom: 2rem;
+        background-color: #111;
+        padding: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .education-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-top: 1rem;
+        max-height: 200px;
+    }
+    
+    /* Skills Section */
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .skill {
+        background-color: #bee130;
+        color: rgb(28, 25, 25);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Contact Section */
+    .contact-methods {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    
+    .contact-card {
+        background-color: #111;
+        padding: 1.5rem;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .contact-card i {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color:  #bee130;
+    }
+    
+    /* Footer */
+    footer {
+        background-color: #111;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .social-icons {
+        margin: 1rem 0;
+    }
+    
+    .social-icons a {
+        color: white;
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+        
+    }
+    
+    .social-icons a:hover {
+        color:  #bee130;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 992px) {
+        #home {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .home-content, .home-image {
+            max-width: 100%;
+            padding-right: 0;
+        }
+        
+        #home h1, #home h2, #home p {
+            text-align: center;
+        }
+        
+        #home img {
+            margin-top: 2rem;
+            width: 250px;
+            height: 250px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        nav a {
+            margin: 0 0.5rem;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        section {
+            padding: 4rem 1.5rem;
+        }
+        
+        #home {
+            padding-top: 6rem;
+        }
+        
+        #home h1 {
+            font-size: 2.5rem;
+        }
+        
+        .contact-methods {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+        }
+        
+        nav a {
+            margin: 0.3rem 0;
+        }
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+        }
+        
+        #home h1 {
+            font-size: 1.8rem;
+        }
+        
+        #home img {
+            width: 200px;
+            height: 200px;
+        }
+    }
